@@ -1,0 +1,26 @@
+\section{The Sample Covariance Problem}
+
+In an effort to represent the risk of an investor's portfolio, the sample covariance matrix uses historical data of stock returns to estimate this risk. The matrix contains \(N(N+1)/2\) distinct variances and covariances between the assets. Thus, increasing the number of assets increases the number of parameters to be estimated at an approximate rate of \(N^2\), without necessarily increasing the number of historical observations. Because these estimates are calculated using a finite number of historical observations, each contains some random sampling error, which can accumulate across the matrix as the number of parameters increases \parencite[378]{ledoit2004well}.
+
+In mathematical terms, the sample covariance matrix, \(S\), is an unbiased estimator of the true covariance matrix, \(\Sigma\) \parencite[368]{ledoit2004well}. Unbiasedness, however, does not imply precision. When the number of historical observations, \(T\), is much larger than the number of assets, \(N\), the sample covariance matrix, \(S\), generally performs adequately. Conversely, when the number of assets is large relative to the number of observations, the sample covariance matrix,
+\[
+S=\frac{1}{T-1}\sum_{t=1}^{T}(r_t-\bar r)(r_t-\bar r)^{\prime},
+\]
+performs poorly as an estimator of the true covariance matrix \parencite[366]{ledoit2004well}. After the returns have been demeaned and centred around zero, the sample covariance matrix has a rank of at most \(T-1\). Therefore, when \(N\geq T\), its rank is smaller than its dimension, making the matrix singular and consequently non-invertible \parencite[604]{LEDOIT2003603}. A third possible outcome occurs when \(N<T\), but \(N\) remains close to \(T\), such that the ratio \(N/T\) is large. The sample covariance matrix may then be invertible yet ill-conditioned, meaning that small changes in the estimated covariances can produce large changes in its inverse \parencite[366]{ledoit2004well}.
+
+The accumulation of estimation errors across the matrix also distorts its eigenvalues. The eigenvalues represent the estimated variances of particular combinations of assets. In large-dimensional settings, the largest sample eigenvalues tend to be overestimated, while the smallest tend to be underestimated and pushed closer to zero \parencite[372]{ledoit2004well}. This can result in a drastic amplification of estimation errors when the matrix is inverted, indicating instability in the estimated covariance matrix \parencite[614]{LEDOIT2003603}.
+
+Investors use the inverse covariance matrix to solve the global minimum-variance problem and determine the optimal portfolio weights \parencite[614]{LEDOIT2003603}:
+\[
+\min_w w^{\prime}S w
+\quad\text{subject to}\quad
+\mathbf{1}^{\prime}w=1.
+\]
+Its solution is
+\[
+\widehat{w}_{\mathrm{GMV}}
+=
+\frac{S^{-1}\mathbf{1}}
+{\mathbf{1}^{\prime}S^{-1}\mathbf{1}}.
+\]
+This highlights the danger of very small estimated eigenvalues. When the covariance matrix is inverted, each eigenvalue is replaced by its reciprocal. Consequently, a very small eigenvalue produces a very large inverse eigenvalue. This gives the apparently low-risk asset combination disproportionate influence over the calculated portfolio weights. The optimiser cannot distinguish between the true covariance structure and relationships created by sampling noise when determining the portfolio weights. Consequently, the optimiser may assign very large positive and negative weights to asset combinations that appear to offer attractive diversification opportunities \parencite[111]{ledoit2004honey}. If these relationships were created by sampling noise, however, they may not persist when the portfolio is tested on new data, resulting in unstable weights and higher realised risk.

@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{csquotes}
+\usepackage[
+  backend=biber,
+  style=authoryear,
+  sorting=nyt,
+  giveninits=true,
+  uniquename=init,
+  maxcitenames=2,
+  maxbibnames=99
+]{biblatex}
+\addbibresource{references.bib}
+\geometry{margin=2.5cm}
+
+\title{Covariance Shrinkage and Minimum-Variance Portfolios: Evidence from the JSE}
+\author{Chane Watt}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\input{sections/introduction.tex}
+
+\input{sections/sample_covariance_problem.tex}
+
+\input{sections/shrinkage_estimation.tex}
+
+\input{sections/empirical_application.tex}
+
+\input{sections/limitations.tex}
+
+\input{sections/conclusion.tex}
+
+\printbibliography
+
+\end{document}
