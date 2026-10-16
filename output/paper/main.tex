@@ -1,18 +1,35 @@
-\documentclass[12pt]{article}
+\documentclass[12pt,a4paper]{article}
 \usepackage{graphicx}
 \usepackage{geometry}
-\usepackage{amsmath,amssymb}
-\usepackage{csquotes}
+\usepackage{amsmath}
+\usepackage{parskip}
 \usepackage[
   backend=biber,
   style=authoryear,
   sorting=nyt,
+  sortcites=true,
   giveninits=true,
   uniquename=init,
   maxcitenames=2,
-  maxbibnames=99
+  maxbibnames=99,
+  dashed=false,
+  date=year
 ]{biblatex}
 \addbibresource{references.bib}
+
+% Stellenbosch Harvard citation punctuation: (Author & Author, year:page).
+\DeclareDelimFormat{nameyeardelim}{\addcomma\space}
+\DeclareDelimFormat[parencite]{finalnamedelim}{\addspace\&\space}
+\DeclareFieldFormat{postnote}{#1}
+\DeclareDelimFormat{postnotedelim}{\addcolon}
+
+% Stellenbosch Harvard reference-list conventions.
+\DeclareDelimFormat[bib,biblist]{finalnamedelim}{\addspace\&\space}
+\renewbibmacro*{date+extradate}{%
+  \iffieldundef{labelyear}
+    {}
+    {\printlabeldateextra}}
+\DeclareFieldFormat{pages}{#1}
 \geometry{margin=2.5cm}
 
 \title{Covariance Shrinkage and Minimum-Variance Portfolios: Evidence from the JSE}
@@ -22,18 +39,23 @@
 \begin{document}
 \maketitle
 
+\begin{center}
+\textbf{Word count: 2,406}
+\end{center}
+
 \input{sections/introduction.tex}
 
 \input{sections/sample_covariance_problem.tex}
 
 \input{sections/shrinkage_estimation.tex}
 
-\input{sections/empirical_application.tex}
+\input{sections/alterative_approaches.tex}
 
-\input{sections/limitations.tex}
+\input{sections/empirical_application.tex}
 
 \input{sections/conclusion.tex}
 
+\clearpage
 \printbibliography
 
 \end{document}

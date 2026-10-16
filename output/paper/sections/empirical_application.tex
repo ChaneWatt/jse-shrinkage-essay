@@ -1,1 +1,125 @@
 \section{Empirical Application: JSE Portfolios}
+
+\subsection{Data and Design}
+
+Ledoit and Wolf's empirical portfolio evidence is drawn from US equities, so its applicability to the JSE cannot be assumed \parencite{LEDOIT2003603}. This illustration uses 17 manually selected large-cap JSE-listed companies spanning the financial, mining, telecommunications, retail and industrial sectors. It is not a complete or historical index sample. Daily adjusted closing prices from Yahoo Finance cover January 2015 to December 2024 and account for dividends and share splits.
+
+Simple daily returns were divided chronologically: the first 70\% (1,768 observations) formed the estimation window and the remaining 30\% (758 observations) formed the out-of-sample evaluation window. Each covariance estimate generated an unconstrained global minimum-variance portfolio whose weights were held fixed throughout the test period. Holding the assets, dates and optimisation rule constant isolates the effect of changing the covariance estimator. Returns and volatility were annualised using 252 trading days.
+
+\subsection{Covariance Diagnostics}
+
+The condition number assesses whether a covariance matrix can be inverted reliably. It is the ratio of the largest eigenvalue to the smallest, with a larger value indicating that small estimation errors may cause larger changes in the inverse matrix and the resulting portfolio weights. Linear shrinkage reduced the condition number by approximately 14.5\%, from 44.74 to 38.26, whereas nonlinear shrinkage produced a smaller reduction of approximately 3.9\%, to 42.98.
+
+Table~\ref{tab:diagnostics} reports the covariance-matrix and portfolio diagnostics for the three estimators.
+
+\begin{table}[htbp]
+\centering
+\caption{Covariance-matrix and portfolio diagnostics}
+\label{tab:diagnostics}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\hline
+Estimator
+& Condition number
+& Minimum eigenvalue
+& Gross leverage
+& Minimum weight
+& Maximum weight \\
+\hline
+Sample covariance
+& 44.74
+& 0.0000795
+& 1.241
+& -6.99\%
+& 28.48\% \\
+
+Linear shrinkage
+& 38.26
+& 0.0000911
+& 1.205
+& -5.97\%
+& 27.19\% \\
+
+Nonlinear shrinkage
+& 42.98
+& 0.0000825
+& 1.233
+& -6.87\%
+& 28.15\% \\
+\hline
+\end{tabular}%
+}
+
+\parbox{\textwidth}{\footnotesize
+\textit{Note:} Portfolio weights are obtained from unconstrained global
+minimum-variance portfolios. Gross leverage is the sum of the absolute
+portfolio weights. Source: Author's calculations.
+}
+\end{table}
+
+\subsection{Portfolio Weights and Concentration}
+
+The improved conditioning under linear shrinkage also affected the portfolio weights. Because the optimisation was unconstrained, all three portfolios contained negative weights, representing short positions in which shares are borrowed and sold. The portfolios were also highly concentrated. Under the sample estimator, the largest short position was FirstRand at $-6.99\%$ and the largest positive position was Vodacom at 28.48\%. Linear shrinkage made these weights less extreme at $-5.97\%$ and 27.19\%, respectively. It reduced gross leverage, the sum of the absolute weights, from 1.241 to 1.205 and total short exposure from 12.07\% to 10.25\%. Vodacom and Mondi jointly represented 53.98\% of the sample portfolio, compared with 51.97\% under linear shrinkage. Linear shrinkage therefore moderated but did not eliminate concentration, while nonlinear shrinkage produced weights closer to the sample estimator.
+
+\subsection{Out-of-Sample Performance}
+
+The linear shrinkage estimator in this application used a scaled-identity target. To determine whether the differences in the covariance estimates and portfolio weights translated into improved performance, the portfolios were evaluated over 758 out-of-sample observations from 17 December 2021 to 31 December 2024. Table~\ref{tab:performance} reports the resulting performance measures.
+
+\begin{table}[htbp]
+\centering
+\caption{Out-of-sample portfolio performance}
+\label{tab:performance}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrr}
+\hline
+Estimator
+& Annualised return
+& Annualised volatility
+& Maximum drawdown
+& Sharpe ratio \\
+\hline
+Sample covariance
+& 4.41\%
+& 16.47\%
+& $-16.92\%$
+& 0.268 \\
+
+Linear shrinkage
+& 4.71\%
+& 16.39\%
+& $-16.75\%$
+& 0.287 \\
+
+Nonlinear shrinkage
+& 4.47\%
+& 16.46\%
+& $-16.85\%$
+& 0.272 \\
+\hline
+\end{tabular}%
+}
+
+\parbox{\textwidth}{\footnotesize
+\textit{Note:} Returns and volatility are annualised using 252 trading
+days. The Sharpe ratio assumes a zero risk-free rate. Source: Author's
+calculations.
+}
+\end{table}
+
+Because these were global minimum-variance portfolios, realised volatility was the primary outcome. Linear shrinkage produced the lowest annualised volatility, reducing it from 16.47\% under the sample estimator to 16.39\%. Nonlinear shrinkage produced annualised volatility of 16.46\%, remaining close to the sample estimator. The improvement under linear shrinkage was therefore only 0.08 percentage points. Linear shrinkage also recorded the highest realised return of 4.71\%, the least severe maximum drawdown of $-16.75\%$ and the highest zero-risk-free-rate Sharpe ratio of 0.287. These results ranked linear shrinkage first across the reported measures, although the differences were small. Its higher realised return should not be interpreted as an expected-return forecast because shrinkage altered only the covariance estimate and resulting portfolio weights.
+
+Figure~\ref{fig:oos-returns} presents the cumulative returns over the test period. The substantial overlap between the three paths visually reinforces the small economic differences reported in Table~\ref{tab:performance}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{../oos_cumulative_returns.png}
+\caption{Cumulative out-of-sample returns of the minimum-variance portfolios}
+\label{fig:oos-returns}
+\end{figure}
+
+\subsection{Interpretation and Limitations}
+
+Linear shrinkage produced the most stable covariance matrix, less extreme weights and the strongest out-of-sample results, although the improvements were marginal. Nonlinear shrinkage remained close to the sample estimator. This is consistent with the low-dimensional design: 17 assets were estimated using 1,768 observations, giving an \(N/T\) ratio of approximately 0.0096. The sample matrix was therefore already reasonably stable, leaving limited estimation error for shrinkage to correct. The manually selected sample, single test window and absence of statistical-significance testing limit the findings, as do unconstrained short selling, fixed weights and zero transaction costs. The results should therefore be interpreted as illustrative rather than conclusive.
+

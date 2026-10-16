@@ -1,0 +1,376 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{bai2002determining}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0dc94d98f7e1729d400a45f4d532e4a4}{%
+           family={Bai},
+           familyi={B\bibinitperiod},
+           given={Jushan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d9598cb5e0ac67e52bb26096e0fd043}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Serena},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{fullhash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{fullhashraw}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{bibnamehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authorbibnamehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authornamehash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authorfullhash}{feda9ccfe432a161b59f18da98f3b0f1}
+      \strng{authorfullhashraw}{feda9ccfe432a161b59f18da98f3b0f1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Econometrica}
+      \field{number}{1}
+      \field{title}{Determining the number of factors in approximate factor models}
+      \field{volume}{70}
+      \field{year}{2002}
+      \field{pages}{191\bibrangedash 221}
+      \range{pages}{31}
+    \endentry
+    \entry{fan2007highdimensionalcovariancematrix}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=2eb00838f3cea970c7377bfea9631787}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Jianqing},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84e992947ee6777f06640104c0dbbf0e}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Yingying},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f66fa2ea251428c6943aaa92cd79812}{%
+           family={Lv},
+           familyi={L\bibinitperiod},
+           given={Jinchi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df51a30a5b81b31d4ab32fe7c1190543}
+      \strng{fullhash}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \strng{fullhashraw}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \strng{bibnamehash}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \strng{authorbibnamehash}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \strng{authornamehash}{df51a30a5b81b31d4ab32fe7c1190543}
+      \strng{authorfullhash}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \strng{authorfullhashraw}{9fa4a2c193de8505c11d35c58e9ea30f}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Econometrics}
+      \field{number}{1}
+      \field{title}{High Dimensional Covariance Matrix Estimation Using a Factor Model}
+      \field{volume}{147}
+      \field{year}{2008}
+      \field{pages}{186\bibrangedash 197}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.jeconom.2008.09.017
+      \endverb
+    \endentry
+    \entry{jagannathan2003risk}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=40c358e3088c318c285107caccc9bfb2}{%
+           family={Jagannathan},
+           familyi={J\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53fc8cd618ee2231555d75e60ce9c397}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Tongshu},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{fullhash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{fullhashraw}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{bibnamehash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{authorbibnamehash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{authornamehash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{authorfullhash}{d32f3486efd1388a8062e92ef1a5f125}
+      \strng{authorfullhashraw}{d32f3486efd1388a8062e92ef1a5f125}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Finance}
+      \field{number}{4}
+      \field{title}{Risk Reduction in Large Portfolios: Why Imposing the Wrong Constraints Helps}
+      \field{volume}{58}
+      \field{year}{2003}
+      \field{pages}{1651\bibrangedash 1683}
+      \range{pages}{33}
+      \verb{doi}
+      \verb 10.1111/1540-6261.00580
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1111/1540-6261.00580
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1111/1540-6261.00580
+      \endverb
+    \endentry
+    \entry{LEDOIT2003603}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes to estimate the covariance matrix of stock returns by an optimally weighted average of two existing estimators: the sample covariance matrix and single-index covariance matrix. This method is generally known as shrinkage, and it is standard in decision theory and in empirical Bayesian statistics. Our shrinkage estimator can be seen as a way to account for extra-market covariance without having to specify an arbitrary multifactor structure. For NYSE and AMEX stock returns from 1972 to 1995, it can be used to select portfolios with significantly lower out-of-sample variance than a set of existing estimators, including multifactor models.}
+      \field{issn}{0927-5398}
+      \field{journaltitle}{Journal of Empirical Finance}
+      \field{number}{5}
+      \field{title}{Improved estimation of the covariance matrix of stock returns with an application to portfolio selection}
+      \field{volume}{10}
+      \field{year}{2003}
+      \field{pages}{603\bibrangedash 621}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1016/S0927-5398(03)00007-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927539803000070
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0927539803000070
+      \endverb
+      \keyw{Covariance matrix estimation,Factor models,Portfolio selection,Shrinkage method}
+    \endentry
+    \entry{ledoit2004well}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Multivariate Analysis}
+      \field{number}{2}
+      \field{title}{A well-conditioned estimator for large-dimensional covariance matrices}
+      \field{volume}{88}
+      \field{year}{2004}
+      \field{pages}{365\bibrangedash 411}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1016/S0047-259X(03)00096-4
+      \endverb
+    \endentry
+    \entry{ledoit2004honey}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{3}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Portfolio Management}
+      \field{number}{4}
+      \field{title}{Honey, {I} Shrunk the Sample Covariance Matrix}
+      \field{volume}{30}
+      \field{year}{2004}
+      \field{pages}{110\bibrangedash 119}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.3905/jpm.2004.110
+      \endverb
+    \endentry
+    \entry{ledoit2012nonlinear}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Statistics}
+      \field{number}{2}
+      \field{title}{Nonlinear shrinkage estimation of large-dimensional covariance matrices}
+      \field{volume}{40}
+      \field{year}{2012}
+      \field{pages}{1024\bibrangedash 1060}
+      \range{pages}{37}
+      \verb{doi}
+      \verb 10.1214/12-AOS989
+      \endverb
+    \endentry
+    \entry{ledoitwolf2022power}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e98821837b14867718e6d02fdd00754b}{%
+           family={Ledoit},
+           familyi={L\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=aba96a4246f521dcd0f7b0b6c402b9fc}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{fullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \strng{bibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorbibnamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authornamehash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhash}{ce321f123471e4f23ec245fdfceee685}
+      \strng{authorfullhashraw}{ce321f123471e4f23ec245fdfceee685}
+      \field{extraname}{5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Financial Econometrics}
+      \field{number}{1}
+      \field{title}{The Power of {(Non-)Linear} Shrinking: A Review and Guide to Covariance Matrix Estimation}
+      \field{volume}{20}
+      \field{year}{2022}
+      \field{pages}{187\bibrangedash 218}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1093/jjfinec/nbaa007
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

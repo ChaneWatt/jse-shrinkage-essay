@@ -2,8 +2,37 @@
 
 \subsection{The Shrinkage Principle}
 
+The sample covariance matrix is a natural data-driven estimator because it imposes little structure and remains unbiased when calculated using the \(T-1\) denominator. However, it can have high estimation variance, which may translate into unstable portfolio weights and higher realised risk \parencite[111]{ledoit2004honey}.
+
+Shrinkage addresses this problem by forming a convex combination of a structured covariance target, \(F\), and the sample covariance matrix, \(S\). The target introduces bias because its simplifying assumptions may not represent the true covariance structure, but it contains less sampling error and is more stable. The sample estimator is unbiased but can vary considerably between samples \parencite[608]{LEDOIT2003603}. The shrinkage intensity, \(\delta\), controls the trade-off:
+
+\[
+\widehat{\Sigma}_{\text{shrink}}
+= \delta F + (1-\delta)S,
+\qquad 0 \leq \delta \leq 1.
+\]
+If \(\delta=0\), the estimator equals \(S\); if \(\delta=1\), it equals \(F\); and intermediate values combine the two.
+
+Movement towards \(F\) introduces bias but reduces estimation variance. The relationship
+\[
+\text{mean squared error}=\text{variance}+\text{squared bias}
+\]
+shows why a biased estimator can outperform an unbiased one when its reduction in variance is sufficiently large \parencite[370]{ledoit2004well}. Estimation error is measured using the squared Frobenius distance,
+\[
+L(\delta)=\left\|\delta F+(1-\delta)S-\Sigma\right\|_{\mathrm{F}}^2,
+\]
+which sums the squared differences between the shrinkage estimator and the true covariance matrix \parencite[608--609]{LEDOIT2003603}. Because \(\Sigma\) is unobservable, the optimal intensity minimises the expected loss. More weight is assigned to \(F\) when \(S\) contains greater estimation error, while less shrinkage is required when \(S\) is more reliable \parencite[369]{ledoit2004well}. By reducing noisy extreme estimates, shrinkage produces a better-conditioned covariance estimate whose inverse is less likely to generate unstable weights \parencites[111]{ledoit2004honey}[614]{LEDOIT2003603}.
+
 \subsection{Linear Shrinkage and the Choice of Target}
+
+Several structured estimators can serve as shrinkage targets. One example is the scaled identity target. \textcite[368--370]{ledoit2004well} shrink the sample covariance matrix towards \(mI\), where \(m\) is the average variance or eigenvalue. In their idealised comparison, the target contributes bias but no estimation variance, whereas \(S\) is unbiased but contains estimation variance. The target assumes equal asset variances and zero covariance between different assets. It therefore improves conditioning but oversimplifies relationships such as the closer co-movement of banking shares relative to mining shares. The value of \(\delta\) determines how strongly the sample estimate is pulled towards this target.
+
+A \(K\)-factor model with uncorrelated residuals can also be used as a target. A multifactor model captures several sources of co-movement, but its result depends on which factors are selected. \textcite[607--608]{LEDOIT2003603} therefore use Sharpe's single-index model, under which stocks co-move through their different exposures to the market while company-specific residuals are assumed to be uncorrelated.
+
+The constant-correlation target preserves individual sample variances but replaces the different pairwise correlations with their average. It recognises that equity returns generally co-move while imposing less structure than an unrestricted covariance matrix \parencite[113]{ledoit2004honey}. The scaled identity target provides the strongest simplification, the single-index target retains market-driven co-movement and the constant-correlation target preserves a common level of correlation. The choice of target therefore balances stability against the risk of imposing an inaccurate covariance structure.
 
 \subsection{Nonlinear Shrinkage}
 
-\section{Alternative Approaches to Covariance Estimation}
+Nonlinear shrinkage is rotation-equivariant: rotating the data rotates the estimate in the same manner. Equivalently, it retains the sample eigenvectors but adjusts the corresponding eigenvalues individually \parencite[1025]{ledoit2012nonlinear}. This restriction is useful when no reliable external information is available. It also addresses the tendency for the largest sample eigenvalues to be overestimated and the smallest to be underestimated, exaggerating their dispersion.
+
+When a multiple of the identity matrix is used as the target, linear shrinkage applies the same intensity, \(\delta\), to every eigenvalue, including those already close to their population values. Nonlinear shrinkage instead applies an eigenvalue-specific correction \parencites[1025]{ledoit2012nonlinear}[199, 205]{ledoitwolf2022power}. An eigenvalue with greater estimated distortion may therefore receive a larger adjustment than one that is already well estimated. This flexibility can be valuable when population eigenvalues are dispersed and a common linear correction is too restrictive. Although the required corrections are more complex to estimate, nonlinear shrinkage can produce estimates closer to the population covariance matrix \parencite[1025--1026]{ledoit2012nonlinear}.
