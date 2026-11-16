@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1792179013.30884 "main.bcf" "main.bbl" "main" 1792179081.68293 0
-  "main.bcf" 1792179081.42783 110611 363555a4bbb4419ca2f2550ef2f99357 "pdflatex"
+["biber main"] 1792179471.3732 "main.bcf" "main.bbl" "main" 1792179495.72496 0
+  "main.bcf" 1792179494.52881 110749 a32de67b9ace899b7608ed5ec61a0f06 "pdflatex"
   "references.bib" 1792179012.46034 4030 618bbb354aa1b4777d62915eb676bcc0 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792179079.16559 "c:/Users/Chane Watt/OneDrive - Stellenbosch University/Documents/Honours/Semester 2/Financial Economics/Essay/jse-shrinkage-essay/output/paper/main.tex" "main.pdf" "main" 1792179081.68398 0
+["pdflatex"] 1792179488.50209 "c:/Users/Chane Watt/OneDrive - Stellenbosch University/Documents/Honours/Semester 2/Financial Economics/Essay/jse-shrinkage-essay/output/paper/main.tex" "main.pdf" "main" 1792179495.72932 0
   "../oos_cumulative_returns.png" 1791921748.51047 252161 60d7372d64a8dbf4516ab9612761e74d ""
   "C:/Users/Chane Watt/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1792072769.18738 137693 13f45cdfb2b96bf65d76f7b2c33be990 ""
   "C:/Users/Chane Watt/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1785912556.64277 13335942 3582c0db51fafdaffbebc8acc87e9860 ""
@@ -93,13 +93,13 @@
   "C:/Users/Chane Watt/AppData/Local/Programs/MiKTeX/tex/latex/parskip/parskip.sty" 1615976160 4288 94714aa7f535440f33181fec52a31963 ""
   "C:/Users/Chane Watt/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "c:/Users/Chane Watt/OneDrive - Stellenbosch University/Documents/Honours/Semester 2/Financial Economics/Essay/jse-shrinkage-essay/output/paper/main.tex" 1792178354.16887 1457 9faa00dc175a62e132d8d61d2b1bcd3b ""
-  "main.aux" 1792179081.42328 5845 90585be63e1292c14ef910ede2bd0e9b "pdflatex"
-  "main.bbl" 1792179018.45374 15674 aad217ae35f2dff05a0d62769b1f7452 "biber main"
-  "main.run.xml" 1792179081.43184 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
+  "main.aux" 1792179494.50725 6023 577b814dbc340763a7c84c038059d5c0 "pdflatex"
+  "main.bbl" 1792179480.03157 15674 aad217ae35f2dff05a0d62769b1f7452 "biber main"
+  "main.run.xml" 1792179494.55548 2311 e66a0e3ff336a5af941c7fe634558519 "pdflatex"
   "sections/alterative_approaches.tex" 1792179012.56974 3059 77b47d4875dff53b2f94557e1ff08838 ""
   "sections/conclusion.tex" 1792177131.93805 1272 3107c015ba8c8fcf88d1add71d311a3d ""
   "sections/empirical_application.tex" 1792177630.36604 6804 f048176f7937e14a74f6064b6e5ab219 ""
-  "sections/introduction.tex" 1792179078.53165 1487 92d2cc564837611d69f9319249cbb6ba ""
+  "sections/introduction.tex" 1792179458.40706 1528 c036060deab0d55bf785b5377768ebc3 ""
   "sections/sample_covariance_problem.tex" 1792177614.92371 3179 3b8205cf7fb24416f91222f35b5ed5be ""
   "sections/shrinkage_estimation.tex" 1792177669.92985 5257 06e5f79d866b3cb96192d0f77a20396d ""
   (generated)

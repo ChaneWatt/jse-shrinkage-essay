@@ -2374,34 +2374,36 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">ledoit2004well</bcf:citekey>
     <bcf:citekey order="2" intorder="1">ledoit2004well</bcf:citekey>
     <bcf:citekey order="3" intorder="1">ledoit2004well</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">LEDOIT2003603</bcf:citekey>
     <bcf:citekey order="6" intorder="1">ledoit2004well</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">ledoit2004well</bcf:citekey>
     <bcf:citekey order="8" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">ledoit2004honey</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">LEDOIT2003603</bcf:citekey>
     <bcf:citekey order="10" intorder="1">ledoit2004honey</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">ledoit2004well</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">ledoit2004well</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">ledoit2004honey</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">ledoit2004well</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">LEDOIT2003603</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">ledoit2004honey</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">ledoit2012nonlinear</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">ledoit2004honey</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">ledoit2004honey</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">ledoit2004well</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">ledoit2004honey</bcf:citekey>
     <bcf:citekey order="21" intorder="1">ledoit2012nonlinear</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">ledoitwolf2022power</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">ledoit2012nonlinear</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">jagannathan2003risk</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">fan2007highdimensionalcovariancematrix</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">bai2002determining</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">jagannathan2003risk</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">LEDOIT2003603</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">ledoit2012nonlinear</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">ledoitwolf2022power</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">ledoit2012nonlinear</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">jagannathan2003risk</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">fan2007highdimensionalcovariancematrix</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">bai2002determining</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">jagannathan2003risk</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">LEDOIT2003603</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
